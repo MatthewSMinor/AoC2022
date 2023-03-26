@@ -30,43 +30,25 @@ object Day2 {
         return when (opp) {
             'A' -> {
                 when (me) {
-                    'X' -> {
-                        4 // rock is 1, draw is 3
-                    }
-                    'Y' -> {
-                        8 // 2+6
-                    }
-                    'Z' -> {
-                        3 // 3+0
-                    }
+                    'X' -> 4
+                    'Y' -> 8
+                    'Z' -> 3
                     else -> {return -1}
                 }
             }
             'B' -> {
                 when (me) {
-                    'X' -> {
-                        1 // rock is 1, 0
-                    }
-                    'Y' -> {
-                        5 // 2+ 3
-                    }
-                    'Z' -> {
-                        9 // 3+6
-                    }
+                    'X' -> 1
+                    'Y' -> 5
+                    'Z' -> 9
                     else -> {return -1}
                 }
             }
             'C' -> {
                 when (me) {
-                    'X' -> {
-                        7 // 1+6
-                    }
-                    'Y' -> {
-                        2 // 2 + 0
-                    }
-                    'Z' -> {
-                        6 // 3 + 3
-                    }
+                    'X' -> 7
+                    'Y' -> 2
+                    'Z' -> 6
 
                     else -> {return -1}
                 }
@@ -85,9 +67,9 @@ object Day2 {
         return when (opp) {
             'A' -> {
                 when (me) {
-                    'Y' -> 4
-                    'X' -> 3
-                    'Z' -> 8 // 2+6
+                    'Y' -> draw+rock
+                    'X' -> scissors+lose
+                    'Z' -> paper+win
                     else -> -1
                 }
             }
