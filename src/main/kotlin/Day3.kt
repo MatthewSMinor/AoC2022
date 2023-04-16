@@ -7,7 +7,7 @@ object Day3 {
         // add all priorities from all lines
         // return total priority
         var totalPriority = 0
-        loop@ input.forEach {
+        input.forEach {
             var firstHalf = it.slice(0 until it.length/2).toList()
             var secondHalf = it.slice(it.length/2 until it.length).toList()
             var common = firstHalf.intersect(secondHalf.toSet())
