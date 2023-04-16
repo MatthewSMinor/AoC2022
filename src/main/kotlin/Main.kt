@@ -10,6 +10,6 @@ fun main() {
 
     val dayThreeInputFile = "src/main/kotlin/d3Input.txt"
     val dayThreeInput = AocFileReader.readDayThreeInput(dayThreeInputFile)
-    Day3.partOne(dayThreeInput)
+    Day3.partTwo(dayThreeInput)
 }
 
