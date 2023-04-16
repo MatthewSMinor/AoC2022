@@ -8,5 +8,8 @@ fun main() {
 //    var day1Result = Day1.partOne(input)
 //    Day1.partTwo(day1Result)
 
+    val dayThreeInputFile = "src/main/kotlin/d3Input.txt"
+    val dayThreeInput = AocFileReader.readDayThreeInput(dayThreeInputFile)
+    Day3.partOne(dayThreeInput)
 }
 

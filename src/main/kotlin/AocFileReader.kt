@@ -9,4 +9,12 @@ object AocFileReader {
 
         return arr;
     }
+
+    fun readDayThreeInput(inputFile: String): ArrayList<String> {
+        var arr = ArrayList<String>()
+        File(inputFile).forEachLine {
+            arr.add(it)
+        }
+        return arr
+    }
 }
