@@ -28,8 +28,8 @@ object Day3 {
             val second = input[i+1].toList()
             val third = input[i+2].toList()
 
-            val commonAmoungFirstTwo = first.intersect(second.toSet())
-            val result = commonAmoungFirstTwo.intersect(third.toSet())
+            val commonAmongFirstTwo = first.intersect(second.toSet())
+            val result = commonAmongFirstTwo.intersect(third.toSet())
             totalPriority += if (result.first().isLowerCase()) result.first().code-96
             else result.first().code-38
         }
